@@ -42,9 +42,15 @@ resource "aws_security_group" "SG" {
     from_port = var.server_port2
     to_port   = var.server_port2
     cidr_blocks = ["0.0.0.0/0"]
-
-  
   }
+
+   ingress {
+    protocol  = "tcp"
+    from_port = var.server_port3
+    to_port   = var.server_port3
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
 
 
 

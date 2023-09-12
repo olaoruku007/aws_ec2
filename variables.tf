@@ -33,3 +33,9 @@ variable "server_port2" {
   type        = number
   default     = 80
 }
+
+variable "server_port3" {
+  description = "The server port for the instance"
+  type        = number
+  default     = 8080
+}
